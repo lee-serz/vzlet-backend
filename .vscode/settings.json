@@ -1,0 +1,10 @@
+{
+	"audioCues.enabled": "off",
+	"audioCues.foldedArea": "off",
+	"accessibility.signals.lineHasError": {
+		"sound": "off"
+	},
+	"accessibility.signals.lineHasWarning": {
+		"sound": "off"
+	}
+}
