@@ -4,6 +4,8 @@ import { LoggerMiddleware } from './middleware/logger.middleware'
 import { ConfigModule } from '@nestjs/config'
 import { AuthModule } from './auth/auth.module'
 import { UserModule } from './user/user.module'
+import { ServicesModule } from './services/services.module';
+import { ApplicationModule } from './application/application.module';
 
 @Module({
 	imports: [
@@ -11,7 +13,9 @@ import { UserModule } from './user/user.module'
 			isGlobal: true
 		}),
 		AuthModule,
-		UserModule
+		UserModule,
+		ServicesModule,
+		ApplicationModule
 	]
 })
 export class AppModule implements NestModule {

@@ -1,4 +1,3 @@
-import { EmailService } from '@/email/email.service'
 import { PrismaService } from '@/prisma.service'
 import { UserService } from '@/user/user.service'
 import {
@@ -18,7 +17,7 @@ export class AuthService {
 	constructor(
 		private jwt: JwtService,
 		private userService: UserService,
-		private emailService: EmailService,
+
 		private prisma: PrismaService
 	) {}
 

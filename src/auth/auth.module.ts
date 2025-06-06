@@ -1,4 +1,3 @@
-import { EmailModule } from 'src/email/email.module'
 import { PrismaService } from 'src/prisma.service'
 import { UserModule } from 'src/user/user.module'
 import { Module } from '@nestjs/common'
@@ -17,8 +16,7 @@ import { JwtStrategy } from './strategies/jwt.strategy'
 			inject: [ConfigService],
 			useFactory: getJwtConfig
 		}),
-		UserModule,
-		EmailModule
+		UserModule
 	],
 	controllers: [AuthController],
 	providers: [JwtStrategy, PrismaService, AuthService, RefreshTokenService]
